@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bhargav // Hive</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="files/bees-removebg-preview.png">
+</head>
+
+<body>
+
+  <!-- Top button -->
+  <button id="topBtn">
+    ↑
+  </button>
+  <script src="top.js"></script>
+
+  <div class="readme">
+    <div class="hex-bg"></div>
+
+    <!-- HEADER -->
+    <div class="header">
+      <!-- Animated bee avatar -->
+      <div class="avatar-wrap">
+        <div class="bee-ring"></div>
+        <div class="bee-svg-wrap">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#1a1a00" />
+                <stop offset="100%" stop-color="#0a0a00" />
+              </radialGradient>
+              <radialGradient id="bodyGrad" cx="40%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#FFE033" />
+                <stop offset="100%" stop-color="#CC8800" />
+              </radialGradient>
+            </defs>
+            <circle cx="60" cy="60" r="60" fill="url(#bgGrad)" />
+            <!-- Honeycomb dots bg -->
+            <circle cx="20" cy="20" r="3" fill="rgba(255,215,0,0.08)" />
+            <circle cx="100" cy="20" r="3" fill="rgba(255,215,0,0.08)" />
+            <circle cx="20" cy="100" r="3" fill="rgba(255,215,0,0.08)" />
+            <circle cx="100" cy="100" r="3" fill="rgba(255,215,0,0.08)" />
+            <!-- Wings -->
+            <ellipse cx="38" cy="42" rx="18" ry="10" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)"
+              stroke-width="0.5" transform="rotate(-20,38,42)" />
+            <ellipse cx="82" cy="42" rx="18" ry="10" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)"
+              stroke-width="0.5" transform="rotate(20,82,42)" />
+            <ellipse cx="42" cy="52" rx="13" ry="7" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)"
+              stroke-width="0.5" transform="rotate(-10,42,52)" />
+            <ellipse cx="78" cy="52" rx="13" ry="7" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)"
+              stroke-width="0.5" transform="rotate(10,78,52)" />
+            <!-- Body -->
+            <ellipse cx="60" cy="72" rx="22" ry="30" fill="url(#bodyGrad)" />
+            <!-- Stripes -->
+            <rect x="38" y="65" width="44" height="7" fill="#1a1000" rx="1" />
+            <rect x="38" y="78" width="44" height="7" fill="#1a1000" rx="1" />
+            <rect x="38" y="91" width="44" height="5" fill="#1a1000" rx="1" />
+            <!-- Clip the stripes to body shape -->
+            <!-- Head -->
+            <circle cx="60" cy="46" r="14" fill="#FFD700" />
+            <!-- Eyes -->
+            <circle cx="54" cy="43" r="4" fill="#0a0a00" />
+            <circle cx="66" cy="43" r="4" fill="#0a0a00" />
+            <circle cx="55" cy="42" r="1.5" fill="rgba(255,255,255,0.6)" />
+            <circle cx="67" cy="42" r="1.5" fill="rgba(255,255,255,0.6)" />
+            <!-- Smile -->
+            <path d="M54 50 Q60 55 66 50" fill="none" stroke="#0a0a00" stroke-width="1.5" stroke-linecap="round" />
+            <!-- Antennae -->
+            <line x1="55" y1="33" x2="48" y2="22" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round" />
+            <line x1="65" y1="33" x2="72" y2="22" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round" />
+            <circle cx="48" cy="21" r="2.5" fill="#FFA500" />
+            <circle cx="72" cy="21" r="2.5" fill="#FFA500" />
+            <!-- Stinger -->
+            <path d="M56 100 Q60 110 64 100" fill="#FFA500" />
+            <!-- Glow ring -->
+            <circle cx="60" cy="60" r="58" fill="none" stroke="rgba(255,215,0,0.08)" stroke-width="1" />
+          </svg>
+        </div>
+        <div class="status-dot" title="Open to work"></div>
+      </div>
+
+      <div class="header-text">
+        <a href="https://github.com/BHARGAV-RUE" target="_blank" class="handle">
+          @BHARGAV-RUE
+        </a>
+        <div class="name">BHARGAV<br><span>KALLEPALLY</span></div>
+        <div class="tagline">
+          <strong>Java Backend Developer</strong> · Spring Boot · REST APIs<br>
+          Building production-ready systems that sting with precision
+        </div>
+        <div class="header-pills">
+          <span class="pill">📍 HYDERABAD, IN</span>
+          <span class="pill">💼 OPEN TO WORK</span>
+          <span class="pill">🎓 MLRIT · IT</span>
+          <span class="pill">🏆 400+ DSA</span>
+        </div>
+        <!-- RESUME BUTTON HERE -->
+        <a href="files/Resume.pdf" target="_blank" class="resume-btn">
+          VIEW RESUME
+        </a>
+      </div>
+
+    </div>
+
+    <div class="stripe"></div>
+
+
+    <!-- ABOUT -->
+    <div class="section">
+      <div class="sec-label">⬡ ABOUT</div>
+      <div class="sec-title">WHO AM I</div>
+      <p class="about-text">
+        Java Backend Developer with <strong>hands-on experience in Spring Boot, REST APIs, and secure system
+          design</strong>. I build production-ready systems with <strong>JWT authentication</strong>, role-based access
+        control, and <strong>automated email workflows</strong>. Completed <strong>Infosys Springboard</strong>
+        internship delivering clean, testable backend solutions. Passionate about developer tooling — published a
+        <strong>VS Code extension</strong> to the marketplace. I don't just write code; I engineer systems that scale,
+        secure, and solve.
+      </p>
+    </div>
+
+    <!-- TECH STACK -->
+    <div class="section">
+      <div class="sec-label">⬡ ARSENAL</div>
+      <div class="sec-title">TECH STACK</div>
+      <div class="stack-grid">
+
+        <div class="stack-group">
+          <div class="stack-group-name">LANGUAGES</div>
+          <div class="badge-row">
+            <span class="badge badge-java">☕ Java</span>
+            <span class="badge badge-web">🐍 Python</span>
+            <span class="badge badge-web">JS</span>
+            <span class="badge badge-web">HTML5</span>
+            <span class="badge badge-web">CSS3</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group-name">BACKEND</div>
+          <div class="badge-row">
+            <span class="badge badge-spring">Spring Boot</span>
+            <span class="badge badge-spring">Spring Security</span>
+            <span class="badge badge-spring">Spring Data JPA</span>
+            <span class="badge badge-spring">JPA/Hibernate</span>
+            <span class="badge badge-spring">REST APIs</span>
+            <span class="badge badge-spring">JWT Auth</span>
+            <span class="badge badge-spring">Jakarta Mail</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group-name">FRONTEND</div>
+          <div class="badge-row">
+            <span class="badge badge-web">React (Vite)</span>
+            <span class="badge badge-web">Component Arch</span>
+            <span class="badge badge-web">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group-name">DATABASE</div>
+          <div class="badge-row">
+            <span class="badge badge-db">MySQL</span>
+            <span class="badge badge-db">JPA Entities</span>
+            <span class="badge badge-db">Schema Design</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group-name">CLOUD & DEVOPS</div>
+          <div class="badge-row">
+            <span class="badge badge-cloud">Railway</span>
+            <span class="badge badge-cloud">Vercel</span>
+            <span class="badge badge-cloud">AWS</span>
+            <span class="badge badge-cloud">Azure</span>
+            <span class="badge badge-cloud">Docker</span>
+            <span class="badge badge-cloud">Git/GitHub</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group-name">TESTING & TOOLS</div>
+          <div class="badge-row">
+            <span class="badge badge-tool">JUnit</span>
+            <span class="badge badge-tool">Mockito</span>
+            <span class="badge badge-tool">Postman</span>
+            <span class="badge badge-tool">Maven</span>
+            <span class="badge badge-tool">IntelliJ IDEA</span>
+            <span class="badge badge-tool">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILL BARS -->
+    <div class="section">
+      <div class="sec-label">⬡ PROFICIENCY</div>
+      <div class="skill-bars">
+        <div class="skill-row">
+          <div class="skill-name">JAVA</div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width:90%"></div>
+          </div>
+          <div class="skill-pct">90%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">SPRING BOOT</div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width:85%"></div>
+          </div>
+          <div class="skill-pct">85%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">REST APIs</div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width:85%"></div>
+          </div>
+          <div class="skill-pct">85%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">MYSQL</div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width:80%"></div>
+          </div>
+          <div class="skill-pct">80%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">REACT</div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width:65%"></div>
+          </div>
+          <div class="skill-pct">65%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">PYTHON</div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width:60%"></div>
+          </div>
+          <div class="skill-pct">60%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">DOCKER</div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width:50%"></div>
+          </div>
+          <div class="skill-pct">50%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <div class="sec-label">⬡ DEPLOYMENTS</div>
+      <div class="sec-title">FEATURED PROJECTS</div>
+
+      <div class="project-card">
+        <div class="proj-top">
+          <div class="proj-name">INVENTORY MONITORING SYSTEM</div>
+          <div class="proj-links">
+            <a href="https://github.com/BHARGAV-RUE/Inventory-Monitoring-and-Reporting-System" target="_blank"
+              class="proj-link">
+              GITHUB
+            </a>
+          </div>
+        </div>
+        <div class="proj-desc">
+          Enterprise-grade <strong>inventory backend</strong> with full CRUD, stock validation guards, and layered
+          Controller→Service→DAO architecture. Secured all endpoints with <strong>JWT + RBAC</strong> for ADMIN /
+          SUPPLIER / STAFF roles. Automated low-stock alerts via <strong>Jakarta Mail + Gmail SMTP</strong>. Full test
+          coverage with JUnit & Mockito.
+        </div>
+        <div class="proj-badges">
+          <span class="badge badge-java">Java</span>
+          <span class="badge badge-spring">Spring Boot</span>
+          <span class="badge badge-spring">Spring Security</span>
+          <span class="badge badge-spring">JWT</span>
+          <span class="badge badge-db">MySQL</span>
+          <span class="badge badge-tool">JUnit</span>
+          <span class="badge badge-tool">Mockito</span>
+          <span class="badge badge-spring">Jakarta Mail</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-top">
+          <div class="proj-name">CIPHER GUESS — FULL STACK GAME</div>
+
+          <div class="proj-links">
+            <a href="https://cipherguess.vercel.app/" target="_blank" class="proj-link live">
+              ⬤ LIVE
+            </a>
+
+            <a href="https://github.com/BHARGAV-RUE/cipher-guess" target="_blank" class="proj-link">
+              GITHUB
+            </a>
+          </div>
+        </div>
+
+        <div class="proj-desc">
+          Full-stack number guessing game with <strong>React + Vite</strong> frontend and <strong>Spring Boot REST
+            API</strong> backend. 3 JPA entities (User, AuthToken, GameSession), <strong>BCrypt hashing</strong>,
+          UUID-based auth, difficulty Enum (EASY/MEDIUM/HARD/GOD), in-memory game state via HashMaps. Deployed
+          backend+MySQL on <strong>Railway</strong> and frontend on <strong>Vercel</strong>.
+        </div>
+
+        <div class="proj-badges">
+          <span class="badge badge-java">Java</span>
+          <span class="badge badge-spring">Spring Boot</span>
+          <span class="badge badge-spring">JPA/Hibernate</span>
+          <span class="badge badge-spring">Spring Security</span>
+          <span class="badge badge-web">React (Vite)</span>
+          <span class="badge badge-db">MySQL</span>
+          <span class="badge badge-cloud">Railway</span>
+          <span class="badge badge-cloud">Vercel</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="proj-top">
+          <div class="proj-name">CLOUDBRIDGE — SECURE MULTI-CLOUD FILE TRANSFER PLATFORM</div>
+
+          <div class="proj-links">
+            <a href="#" target="_blank" class="proj-link live">
+              ⬤ LIVE
+            </a>
+
+            <a href="https://github.com/BHARGAV-RUE/cloudBridge" target="_blank" class="proj-link">
+              GITHUB
+            </a>
+          </div>
+        </div>
+
+        <div class="proj-desc">
+          A secure multi-cloud file transfer and storage system designed for large-scale file handling.
+          Users upload files, compress them into lossless <strong>.7z archives</strong>, and distribute them
+          across multiple cloud providers including <strong>AWS S3</strong>, <strong>Google Drive</strong>,
+          <strong>Azure Blob Storage</strong>, <strong>Oracle Cloud</strong>, and <strong>Backblaze B2</strong>.
+          The system generates secure, expiring download links with password protection, download limits,
+          analytics tracking, and auto-deletion scheduling — all without requiring user login.
+          <br><br>
+          Built with a SaaS-oriented architecture using Spring Boot microservices, scalable cloud integration,
+          and automated file lifecycle management.
+        </div>
+
+        <div class="proj-badges">
+          <span class="badge badge-java">Java</span>
+          <span class="badge badge-spring">Spring Boot</span>
+          <span class="badge badge-spring">Spring Security</span>
+          <span class="badge badge-spring">Spring Cloud</span>
+          <span class="badge badge-db">PostgreSQL</span>
+          <span class="badge badge-web">React.js</span>
+          <span class="badge badge-web">Tailwind CSS</span>
+          <span class="badge badge-cloud">AWS S3</span>
+          <span class="badge badge-cloud">Azure Blob</span>
+          <span class="badge badge-cloud">Oracle Cloud</span>
+          <span class="badge badge-cloud">Backblaze B2</span>
+          <span class="badge badge-cloud">Google Drive API</span>
+          <span class="badge badge-cloud">Docker</span>
+          <span class="badge badge-cloud">Nginx</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <div class="sec-label">⬡ MISSION LOG</div>
+      <div class="sec-title">WORK EXPERIENCE</div>
+      <div class="exp-card">
+        <div class="exp-dot">🏢</div>
+        <div class="exp-body">
+          <div class="exp-company">INFOSYS SPRINGBOARD</div>
+          <div class="exp-role">VIRTUAL INTERN — BACKEND ENGINEERING</div>
+          <div class="exp-date">FEB 2026 — APR 2026</div>
+          <ul class="exp-points">
+            <li>Developed backend logic for a full-stack inventory system using Java and Spring Boot including CRUD,
+              stock management, and layered architecture.</li>
+            <li>Implemented JWT-based authentication and role-based access control using Spring Security across multiple
+              user roles.</li>
+            <li>Built automated low-stock alert system using Jakarta Mail and performed unit + integration testing with
+              JUnit and Mockito.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="sec-label">⬡ TRAINING GROUND</div>
+      <div class="sec-title">EDUCATION</div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <div class="edu-name">Marri Laxman Reddy Institute of Technology</div>
+            <div class="edu-deg">B.TECH — INFORMATION TECHNOLOGY</div>
+            <div class="edu-cgpa">CGPA: 8.20 · 2024 – 2027 · Hyderabad</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">📘</div>
+          <div>
+            <div class="edu-name">Ellenki College of Engineering & Technology</div>
+            <div class="edu-deg">DIPLOMA — EEE</div>
+            <div class="edu-cgpa">CGPA: 8.83 · 2021 – 2024 · Hyderabad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+      <div class="sec-label">⬡ CLEARANCE LEVEL</div>
+      <div class="sec-title">CERTIFICATIONS</div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon">☕</div>
+          <div>
+            <div class="cert-name">Java Foundations</div>
+            <div class="cert-issuer">
+              <a href="https://www.linkedin.com/posts/bhargav-kallepally-816504241_oracle-java-foundations-training-and-assessment-activity-7441144294415134720-DfWC?utm_source=share&utm_medium=member_desktop&rcm=ACoAADwNq5IBGyS10aoGae6OvYfCykSlUJBf2MA"
+                target="_blank" style="color: inherit; text-decoration: none;">
+                ORACLE MYLEARN
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">📊</div>
+          <div>
+            <div class="cert-name">DSA using Java — Elite</div>
+            <div class="cert-issuer">
+              <a href="files/NPTEL certificate.jpeg" target="_blank" style="color: inherit; text-decoration: none;">
+                NPTEL
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🌐</div>
+          <div>
+            <div class="cert-name">Web Development Fundamentals</div>
+            <div class="cert-issuer">
+              <a href="https://www.credly.com/badges/78ab4384-6c6a-4e05-a9c4-33912fc4df4b/public_url" target="_blank"
+                style="color: inherit; text-decoration: none;">
+                IBM SKILLSBUILD — IN PROGRESS
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">⚙️</div>
+          <div>
+            <div class="cert-name">SE & Agile Dev</div>
+            <div class="cert-issuer">
+              <a href="files/Software Engineering and Agile software development.pdf" target="_blank"
+                style="color: inherit; text-decoration: none;">
+                INFOSYS SPRINGBOARD
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🤖</div>
+          <div>
+            <div class="cert-name">Claude Code in Action</div>
+            <div class="cert-issuer">ANTHROPIC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section">
+      <div class="sec-label">⬡ KILLS</div>
+      <div class="sec-title">ACHIEVEMENTS</div>
+      <div class="ach-grid">
+        <div class="ach-item">
+          <div class="ach-num">01</div>
+          <div class="ach-text">
+            Published <strong>HTML Table Maker</strong> VS Code extension to the Marketplace under publisher ID <code
+              style="color:var(--primary)">bhargavKallepally</code> — generates HTML table code from user-specified
+            dimensions.
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-num">02</div>
+          <div class="ach-text">
+            Solved <strong>400+ DSA problems</strong> on CodeChef covering arrays, linked lists, mathematics, strings
+            and core problem-solving — consistently strengthening algorithmic thinking.
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-num">03</div>
+          <div class="ach-text">
+            Deployed a <strong>full-stack production game</strong> (Cipher Guess) with Railway + Vercel — live with real
+            users, real authentication, and real game history tracking.
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-num">04</div>
+          <div class="ach-text">
+            Implemented <strong>3-role RBAC with JWT</strong> on Inventory System — enterprise-level security
+            architecture as a student intern at Infosys.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDE QUESTS -->
+    <div class="section">
+      <div class="sec-label">⬡ SIDE QUESTS</div>
+      <div class="sec-title">OTHER PROJECTS</div>
+
+      <div class="project-card">
+        <div class="proj-top">
+          <div class="proj-name">MAPIFY — VS CODE EXTENSION</div>
+
+          <div class="proj-links">
+            <a href="https://marketplace.visualstudio.com/items?itemName=bhargavKallepally.mapify" target="_blank"
+              class="proj-link live">
+              ⬤ LIVE
+            </a>
+
+            <a href="https://github.com/BHARGAV-RUE/Mapify" target="_blank" class="proj-link">
+              GITHUB
+            </a>
+          </div>
+        </div>
+
+        <div class="proj-desc">
+          Mapify is a VS Code extension that converts complex project structures into
+          readable, architecture-aware visual maps. Instead of raw folder trees, it
+          interprets codebases using semantic understanding of common software
+          architectures and presents them as structured, human-readable maps.
+          <br><br>
+          It helps developers quickly understand large projects by transforming
+          directory structures into meaningful system-level overviews.
+        </div>
+
+        <div class="proj-badges">
+          <span class="badge badge-web">JavaScript</span>
+          <span class="badge badge-tool">VS Code Extension</span>
+          <span class="badge badge-tool">Codebase Visualization</span>
+          <span class="badge badge-tool">Architecture Mapping</span>
+          <span class="badge badge-web">Node.js</span>
+          <span class="badge badge-tool">CLI Tooling</span>
+        </div>
+      </div>
+
+
+      <!-- HTML TABLE MAKER -->
+      <div class="project-card">
+        <div class="proj-top">
+          <div class="proj-name">HTML TABLE MAKER — VS CODE EXTENSION</div>
+
+          <div class="proj-links">
+            <a href="https://marketplace.visualstudio.com/items?itemName=bhargavKallepally.html-table-maker"
+              target="_blank" class="proj-link live">
+              ⬤ LIVE
+            </a>
+
+            <a href="https://github.com/BHARGAV-RUE/HTML-Table-Maker" target="_blank" class="proj-link">
+              GITHUB
+            </a>
+          </div>
+        </div>
+
+        <div class="proj-desc">
+          HTML Table Maker is a VS Code extension that generates HTML tables instantly
+          from user-defined dimensions. It removes repetitive manual markup and speeds up
+          UI prototyping by converting simple inputs into structured, ready-to-use table code.
+          <br><br>
+          Designed for developers who want rapid HTML scaffolding without breaking flow.
+        </div>
+
+        <div class="proj-badges">
+          <span class="badge badge-web">JavaScript</span>
+          <span class="badge badge-tool">VS Code Extension</span>
+          <span class="badge badge-web">HTML</span>
+          <span class="badge badge-tool">Productivity Tool</span>
+          <span class="badge badge-tool">Code Generator</span>
+        </div>
+      </div>
+
+      <!-- SUCCESS SOUND -->
+      <div class="project-card">
+        <div class="proj-top">
+          <div class="proj-name">SUCCESS SOUND — VS CODE EXTENSION</div>
+
+          <div class="proj-links">
+            <a href="https://marketplace.visualstudio.com/items?itemName=bhargavKallepally.success-sound"
+              target="_blank" class="proj-link live">
+              ⬤ LIVE
+            </a>
+
+            <a href="https://github.com/BHARGAV-RUE/Success-Sound.git" target="_blank" class="proj-link">
+              GITHUB
+            </a>
+          </div>
+        </div>
+
+        <div class="proj-desc">
+          Success Sound is a VS Code extension that plays an audio cue whenever your program executes successfully.
+          It transforms silent builds into audible feedback — reinforcing progress and making every successful run
+          feel like a win worth celebrating.
+          <br><br>
+          Built for developers who believe even small victories should be heard.
+        </div>
+
+        <div class="proj-badges">
+          <span class="badge badge-web">JavaScript</span>
+          <span class="badge badge-tool">VS Code Extension</span>
+          <span class="badge badge-tool">Developer Experience</span>
+          <span class="badge badge-tool">Productivity Tool</span>
+          <span class="badge badge-tool">UX Feedback</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="section" style="border-bottom:none;">
+      <div class="sec-label">⬡ SIGNAL</div>
+      <div class="sec-title">GET IN TOUCH</div>
+      <div class="contact-row">
+
+        <a class="contact-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=bhargavkallepally9@gmail.com"
+          target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          bhargavkallepally9@gmail.com
+        </a>
+
+        <a class="contact-btn" href="https://github.com/BHARGAV-RUE" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 008 10.95c.6.1.82-.26.82-.58v-2.04c-3.26.7-3.95-1.57-3.95-1.57-.53-1.35-1.3-1.7-1.3-1.7-1.07-.73.08-.72.08-.72 1.18.08 1.8 1.22 1.8 1.22 1.05 1.8 2.75 1.28 3.42.98.1-.77.4-1.28.73-1.58-2.6-.3-5.34-1.3-5.34-5.8 0-1.28.45-2.32 1.2-3.14-.12-.3-.52-1.52.12-3.18 0 0 .98-.31 3.2 1.2a11.2 11.2 0 015.82 0c2.22-1.5 3.2-1.2 3.2-1.2.64 1.66.24 2.88.12 3.18.75.82 1.2 1.86 1.2 3.14 0 4.5-2.75 5.5-5.36 5.8.42.36.8 1.07.8 2.15v3.18c0 .32.22.69.83.57A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+          </svg>
+          GITHUB · BHARGAV-RUE
+        </a>
+
+        <a class="contact-btn" href="https://www.linkedin.com/in/bhargav-kallepally-816504241/" target="_blank">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M19 3A2 2 0 0121 5V19A2 2 0 0119 21H5A2 2 0 013 19V5A2 2 0 015 3H19M8.34 17V10.67H6.26V17H8.34M7.3 9.73C7.97 9.73 8.5 9.2 8.5 8.53C8.5 7.86 7.97 7.33 7.3 7.33C6.63 7.33 6.1 7.86 6.1 8.53C6.1 9.2 6.63 9.73 7.3 9.73M17 17V13.5C17 11.62 16 10.5 14.25 10.5C13.3 10.5 12.72 11.03 12.45 11.53V10.67H10.37V17H12.45V13.57C12.45 12.67 13.03 12.13 13.83 12.13C14.63 12.13 14.92 12.67 14.92 13.57V17H17Z" />
+          </svg>
+          LINKEDIN
+        </a>
+
+        <a class="contact-btn" href="tel:+916304259310">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+          </svg>
+          +91 6304259310
+        </a>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <span class="footer-bee">🐝</span>
+      <div class="footer-quote">
+        <span>BUILT TO STING</span> · NOT JUST TO EXIST · <span>BHARGAV KALLEPALLY © 2026</span>
+      </div>
+    </div>
+
+  </div>
+  <script src="lazy.js"></script>
+</body>
+
+</html>
