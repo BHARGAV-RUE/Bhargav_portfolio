@@ -10,10 +10,7 @@
 <body>
 
   <!-- Top button -->
-  <button id="topBtn">
-    ↑
-  </button>
-  <script src="top.js"></script>
+  <button id="topBtn">↑</button>
 
   <div class="readme">
     <div class="hex-bg"></div>
@@ -620,42 +617,33 @@
       </div>
     </div>
 
-    <!-- MESSAGE ME -->
+    <!-- Communication -->
     <div class="section">
       <div class="sec-label">⬡ COMMUNICATION</div>
       <div class="sec-title">MESSAGE ME</div>
 
-      <div class="message-card">
-        <form id="contactForm">
+      <form id="contactForm">
 
-          <div class="input-group">
-            <label>NAME</label>
-            <input type="text" id="name" required>
-          </div>
+        <div class="input-group">
+          <label>NAME</label>
+          <input type="text" id="name" required>
+        </div>
 
-          <div class="input-group">
-            <label>EMAIL</label>
-            <input type="email" id="email" required>
-          </div>
+        <div class="input-group">
+          <label>EMAIL</label>
+          <input type="email" id="email" required>
+        </div>
 
-          <div class="input-group">
-            <label>SUBJECT</label>
-            <input type="text" id="subject" required>
-          </div>
+        <div class="input-group">
+          <label>MESSAGE</label>
+          <textarea id="message" required></textarea>
+        </div>
 
-          <div class="input-group">
-            <label>MESSAGE</label>
-            <textarea id="message" rows="6" required></textarea>
-          </div>
+        <button type="submit">SEND MESSAGE 🐝</button>
 
-          <button type="submit" class="send-btn">
-            SEND MESSAGE 🐝
-          </button>
+      </form>
 
-          <div id="status"></div>
-
-        </form>
-      </div>
+      <p id="status"></p>
     </div>
 
     <!-- CONTACT -->
@@ -710,6 +698,8 @@
 
   </div>
   <script src="lazy.js"></script>
+  <script src="top.js"></script>
+  <script src="contact.js"></script>
 </body>
 
 </html>

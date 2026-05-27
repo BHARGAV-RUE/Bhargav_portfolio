@@ -1,36 +1,36 @@
-const form=document.getElementById("contactForm");
-const status=document.getElementById("status");
+const scriptURL = "https://script.google.com/macros/s/AKfycbxGbpE7hinyZw0kZ2zMNaiBJBAoqoRfU3Tg8saQ0CBIqWIlt8e3wDsE8iKY7cALjBQvog/exec";
 
-form.addEventListener("submit", async(e)=>{
+document.addEventListener("DOMContentLoaded", () => {
 
-e.preventDefault();
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("status");
 
-status.innerHTML="TRANSMITTING SIGNAL...";
+    form.addEventListener("submit", function(e) {
 
-const data={
+        e.preventDefault();
 
-name:document.getElementById("name").value,
-email:document.getElementById("email").value,
-message:document.getElementById("message").value
+        const data = {
+            name:    document.getElementById("name").value,
+            email:   document.getElementById("email").value,
+            message: document.getElementById("message").value
+        };
 
-};
+        status.innerHTML = "Sending... 🐝";
 
-try{
+        fetch(scriptURL, {
+            method: "POST",
+            mode:   "no-cors",
+            body:   new URLSearchParams(data)
+        })
+        .then(() => {
+            status.innerHTML = "✓ Message sent successfully";
+            form.reset();
+        })
+        .catch(error => {
+            console.error(error);
+            status.innerHTML = "❌ Failed to send message";
+        });
 
-await fetch("https://script.google.com/macros/s/AKfycbzPSmxin7ttnOCakSKkHYOpqOh-tLXjpXWxdKBu4F0azci50INmMHdu2ahu69xrsVbk7Q/exec",{
-method:"POST",
-body:JSON.stringify(data)
-});
-
-status.innerHTML="✓ MESSAGE DELIVERED";
-
-form.reset();
-
-}
-catch{
-
-status.innerHTML="✕ TRANSMISSION FAILED";
-
-}
+    });
 
 });
